@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/feet-fetish/eSim-Workspace/RC/RC.kicad_sch</source>
+    <date>Tue Jan 16 15:03:36 2024</date>
+    <tool>Eeschema 6.0.11-2627ca5db0~126~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>RC.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1u</value>
+      <libsource lib="eSim_Devices" part="capacitor" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73625919-4122-47a7-bd47-ea470f5a0fcb</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <libsource lib="eSim_Devices" part="resistor" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9f1d0205-49cd-485b-a9fb-10c1e0c281df</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>plot_v1</value>
+      <libsource lib="eSim_Plot" part="plot_v1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c713433-df61-4e49-a868-c7b456c59c99</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>plot_v1</value>
+      <libsource lib="eSim_Plot" part="plot_v1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0dfa9a54-a363-430c-8a44-875e5e480591</tstamps>
+    </comp>
+    <comp ref="v1">
+      <value>sine</value>
+      <footprint>R1</footprint>
+      <libsource lib="eSim_Sources" part="sine" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94375e71-c82f-4d8f-8dfb-377d65bc8005</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="eSim_Devices" part="capacitor">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_Devices" part="resistor">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_Plot" part="plot_v1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">plot_v1</field>
+      </fields>
+      <pins>
+        <pin num="~" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_Sources" part="sine">
+      <footprints>
+        <fp>1_pin</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">v</field>
+        <field name="Value">sine</field>
+        <field name="Footprint">R1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="input"/>
+        <pin num="2" name="-" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="eSim_Devices">
+      <uri>/usr/share/kicad/symbols//eSim_Devices.kicad_sym</uri>
+    </library>
+    <library logical="eSim_Plot">
+      <uri>/usr/share/kicad/symbols//eSim_Plot.kicad_sym</uri>
+    </library>
+    <library logical="eSim_Sources">
+      <uri>/usr/share/kicad/symbols//eSim_Sources.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="v1" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="2" name="IN">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="" pintype="input"/>
+      <node ref="v1" pin="1" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="3" name="OUT">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U2" pin="" pintype="input"/>
+    </net>
+  </nets>
+</export>

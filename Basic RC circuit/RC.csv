@@ -1,0 +1,24 @@
+"Source:","/home/feet-fetish/eSim-Workspace/RC/RC.kicad_sch"
+"Date:","Tue Jan 16 15:03:36 2024"
+"Tool:","Eeschema 6.0.11-2627ca5db0~126~ubuntu20.04.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","5"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","C1","1u","eSim_Devices:capacitor","",""
+"","","R1","1k","eSim_Devices:resistor","",""
+"","","U1","plot_v1","eSim_Plot:plot_v1","",""
+"","","U2","plot_v1","eSim_Plot:plot_v1","",""
+"","","v1","sine","eSim_Sources:sine","R1",""
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","1","C1","1u","eSim_Devices:capacitor","",""
+"2","1","R1","1k","eSim_Devices:resistor","",""
+"3","2","U1, U2","plot_v1","eSim_Plot:plot_v1","",""
+"4","1","v1","sine","eSim_Sources:sine","R1",""
