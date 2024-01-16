@@ -5,6 +5,11 @@
 This circuit is my first eSim simulation, where I simulated a RC delay circuitusing Kicad.
 The circuit consists of a resistor, a capacitor and a voltage source. 
 
+**Simulated circuit:**
+
+![ckt1-sche](https://github.com/harshavardan1403/Euphoric-Electronics/assets/120569811/32496569-0ea3-4995-9fec-cdfa0224a1ac)
+
+
 **eSim Elements used:**
 
   **1. eSim devices:**
@@ -45,3 +50,7 @@ Follow the steps for opening a project instructed in the repository's readme fil
 **Step 10:** After the succesful completion of conversion, simulate the circuit.
 
 **Step 11:** Choose neccesary nodes and plot the results.
+
+**Simulation results:**
+![Ckt1-sim](https://github.com/harshavardan1403/Euphoric-Electronics/assets/120569811/540f36bf-10ed-4952-8324-288697424e3e)
+
