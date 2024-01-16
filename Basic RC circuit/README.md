@@ -52,5 +52,6 @@ Follow the steps for opening a project instructed in the repository's readme fil
 **Step 11:** Choose neccesary nodes and plot the results.
 
 **Simulation results:**
+
 ![Ckt1-sim](https://github.com/harshavardan1403/Euphoric-Electronics/assets/120569811/540f36bf-10ed-4952-8324-288697424e3e)
 
